@@ -67,6 +67,26 @@ ruby 3.0.3p157 (2021-11-24 revision 3fb7d2cadc) [x64-mingw32]
 
 
 
+## Ruby On Rails Home Page Custom Default
 
+```rb
+#config/routes.rb
+root "welcome#code"
+```
+
+
+```rb
+#app/controllers/welcome_controller.rb
+class WelcomeController < ApplicationController
+  def code
+  end
+end
+```
+
+
+```rb
+#app/views/welcome/code.html.erb
+Hello world!
+```
 
 
